@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 5, 5, 5;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  /* This makes scrolling feel smooth like a high-end site */
+  scroll-behavior: smooth;
+  /* This ensures fonts look crisp on Mac/Retina displays */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom selection color (Modern Aesthetic) */
+::selection {
+  background-color: white;
+  color: black;
+}
